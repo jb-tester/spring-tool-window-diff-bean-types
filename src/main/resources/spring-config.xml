@@ -16,5 +16,9 @@
 
         <constructor-arg value="bean4"/>
     </bean>
-    <ctx:property-placeholder location="application.properties"/>
+    <ctx:property-placeholder  location="application.properties"/>
+    <ctx:component-scan base-package="com.example.springtoolwindowdiffbeantypes.services"/>
+    <mvc:view-resolvers order="0">
+        <mvc:jsp/>
+    </mvc:view-resolvers>
 </beans>
