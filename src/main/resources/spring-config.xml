@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="xmlBean" class="com.example.springtoolwindowdiffbeantypes.configs.beans.Bean2">
+
+        <constructor-arg value="bean2"/>
+    </bean>
+    <bean abstract="true" id="abstractXmlBean" class="com.example.springtoolwindowdiffbeantypes.configs.beans.Bean3">
+
+    </bean>
+
+    <bean scope="prototype" id="prototypeXmlBean" class="com.example.springtoolwindowdiffbeantypes.configs.beans.Bean4">
+
+        <constructor-arg value="bean4"/>
+    </bean>
+</beans>
